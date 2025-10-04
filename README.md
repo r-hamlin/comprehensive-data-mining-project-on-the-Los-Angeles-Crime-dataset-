@@ -29,14 +29,14 @@ Because the CSV is very large (≈ 10 M rows), it is **not included** in this 
    - Simplified premise descriptions into broader categories (e.g. Residential, Business/Office, Retail/Restaurant) and derived a binary **`IS_VIOLENT`** flag based on keywords like *assault*, *robbery*, *homicide*, etc.
 
 2. **Exploratory analysis**
-   - Investigated distributions and missing values, visualizing which columns required imputation【732011396282839†screenshot】.  
+   - Investigated distributions and missing values, visualizing which columns required imputation.  
    - Profiled top weapon codes, crime codes and premises.  
-   - Constructed bar charts and facet grids comparing the share of violent vs. non‑violent incidents across victim age groups and simplified premises【732011396282839†screenshot】.
+   - Constructed bar charts and facet grids comparing the share of violent vs. non‑violent incidents across victim age groups and simplified premises.
 
 3. **Hypothesis testing**
    - **H1 – Victim demographics and premises influence crime type and severity:**  Younger victims, particularly teens, are involved in a higher share of violent incidents; violence rates vary by premise (e.g. parks vs. retail).  
-   - **H2 – Seasonal patterns:**  Bootstrap resampling showed no statistically significant increase in crime during summer compared with winter (Δ≈ –29 incidents/day, 95 % CI [–77.5, 18.4])【61020127860235†screenshot】.  
-   - **H3 – Crime co‑occurrence:**  Lift matrices revealed which crime types co‑occur within districts and time‑of‑day buckets; most lift values hovered slightly above 1, indicating weak positive associations【286499793964102†screenshot】.
+   - **H2 – Seasonal patterns:**  Bootstrap resampling showed no statistically significant increase in crime during summer compared with winter (Δ≈ –29 incidents/day, 95 % CI [–77.5, 18.4]). 
+   - **H3 – Crime co‑occurrence:**  Lift matrices revealed which crime types co‑occur within districts and time‑of‑day buckets; most lift values hovered slightly above 1, indicating weak positive associations.
 
 4. **Outputs and artifacts**
    - The cleaned dataset (`crime_data_cleaned.csv`) and a co‑occurrence table (`crime_cooccurrence.csv`) summarising paired crimes.  
